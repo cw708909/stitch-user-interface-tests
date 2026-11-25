@@ -16,7 +16,7 @@ export default function Header({ flow, step, cartCount }) {
             <img
               alt="Savor Ordering Logo"
               className="h-8 w-auto object-contain"
-              src="/images/savor-logo.png"
+              src={`${import.meta.env.BASE_URL}images/savor-logo.png`}
             />
             <span className="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">
               Savor

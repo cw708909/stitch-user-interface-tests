@@ -1,11 +1,13 @@
 // All menu content lives here so it can be changed in one place.
+// BASE_URL keeps images working both locally and on GitHub Pages.
+const image = (name) => `${import.meta.env.BASE_URL}images/${name}`
 
 export const signatureMenu = [
   {
     id: 'truffle-burger',
     name: 'Truffle Angus Burger',
     price: 18.5,
-    image: '/images/truffle-burger.jpg',
+    image: image('truffle-burger.jpg'),
     badge: { text: "Chef's Pick", icon: 'stars', tone: 'dark' },
     description:
       'Prime 200g Black Angus beef patty, toasted Hokkaido brioche, black truffle aioli, melted Gruyère, and caramelized shallot jam.',
@@ -22,7 +24,7 @@ export const signatureMenu = [
     id: 'truffle-fries',
     name: 'Artisan Truffle Fries',
     price: 7.5,
-    image: '/images/truffle-fries.jpg',
+    image: image('truffle-fries.jpg'),
     badge: { text: 'Popular', icon: 'local_fire_department', tone: 'tertiary' },
     description:
       'Triple-cooked Russet potato batons, shaved 24-month Parmigiano-Reggiano, Maldon sea salt, rosemary, and cold-pressed truffle oil.',
@@ -39,7 +41,7 @@ export const signatureMenu = [
     id: 'ginger-brew',
     name: 'House Craft Ginger Brew',
     price: 5.5,
-    image: '/images/ginger-brew.jpg',
+    image: image('ginger-brew.jpg'),
     badge: { text: 'Handcrafted', tone: 'dark' },
     description:
       'Slow-fermented organic Fijian ginger, infused with Meyer lemon, fresh kaffir lime zest, and raw wildflower honey.',
@@ -56,7 +58,7 @@ export const signatureMenu = [
     id: 'salmon-bowl',
     name: 'Smoked Salmon Bowl',
     price: 16,
-    image: '/images/salmon-bowl.jpg',
+    image: image('salmon-bowl.jpg'),
     badge: { text: 'Gluten-Free', tone: 'dark' },
     description:
       'Norwegian smoked salmon, organic tri-color quinoa, creamy Hass avocado, charred edamame, and citrus ponzu emulsion.',
@@ -72,7 +74,7 @@ export const signatureMenu = [
     id: 'polenta-bites',
     name: 'Crispy Polenta Bites',
     price: 8,
-    image: '/images/polenta-bites.jpg',
+    image: image('polenta-bites.jpg'),
     badge: { text: 'Vegetarian', tone: 'dark' },
     description:
       'Stone-ground heirloom corn polenta cubes, fried crisp with fresh sage, smoked sea salt, and a sun-dried tomato romesco dip.',
@@ -88,7 +90,7 @@ export const signatureMenu = [
     id: 'tiramisu',
     name: 'Tiramisu Parfait',
     price: 9.5,
-    image: '/images/tiramisu.jpg',
+    image: image('tiramisu.jpg'),
     badge: { text: 'House Special', tone: 'dark' },
     description:
       'House-baked savoiardi dipped in single-origin cold brew, whipped organic mascarpone, and Valrhona 70% dark chocolate curls.',
@@ -123,7 +125,7 @@ export const pizzaMenu = [
     id: 'pepperoni-pizza',
     name: 'Pepperoni Pizza',
     price: 12.95,
-    image: '/images/pepperoni-pizza.jpg',
+    image: image('pepperoni-pizza.jpg'),
     badge: { text: 'Customer Favorite', icon: 'local_fire_department', tone: 'dark' },
     description:
       'Crispy cupped artisan pepperoni, fresh mozzarella, San Marzano tomato sauce on rustic sourdough crust.',
@@ -141,7 +143,7 @@ export const pizzaMenu = [
     id: 'cheese-pizza',
     name: 'Cheese Pizza',
     price: 9.25,
-    image: '/images/cheese-pizza.jpg',
+    image: image('cheese-pizza.jpg'),
     badge: { text: 'Vegetarian', icon: 'eco', tone: 'tertiary' },
     description:
       'Classic golden blend of bubbling whole-milk mozzarella, aged provolone, and crushed herb tomato passata.',
@@ -159,7 +161,7 @@ export const pizzaMenu = [
     id: 'eggplant-pizza',
     name: 'Eggplant Pizza',
     price: 11.95,
-    image: '/images/eggplant-pizza.jpg',
+    image: image('eggplant-pizza.jpg'),
     badge: { text: 'Chef Special', icon: 'stars', tone: 'dark' },
     description:
       'Tender roasted heirloom eggplant, torn fresh basil, toasted pine nuts, and buffalo mozzarella over wood-fired crust.',
