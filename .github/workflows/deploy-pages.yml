@@ -48,6 +48,9 @@ jobs:
         with:
           path: app/dist
 
+      - name: Give GitHub a moment to register the site package
+        run: sleep 15
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
