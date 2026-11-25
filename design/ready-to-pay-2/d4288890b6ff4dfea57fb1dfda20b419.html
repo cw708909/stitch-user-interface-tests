@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary-fixed": "#390c00",
+          "on-error-container": "#93000a",
+          "on-background": "#151c27",
+          "on-secondary-container": "#69635f",
+          "tertiary-fixed-dim": "#4edea3",
+          "surface-container-low": "#f0f3ff",
+          "inverse-surface": "#2a313d",
+          "background": "#f9f9ff",
+          "surface": "#f9f9ff",
+          "on-tertiary": "#ffffff",
+          "on-tertiary-fixed": "#002113",
+          "secondary-fixed-dim": "#cdc5c0",
+          "outline": "#8d7168",
+          "primary": "#e25c2b",
+          "primary-fixed": "#ffdbd0",
+          "inverse-on-surface": "#ebf1ff",
+          "surface-bright": "#f9f9ff",
+          "secondary": "#635d59",
+          "secondary-fixed": "#eae1db",
+          "primary-container": "#ca4b1a",
+          "outline-variant": "#e0bfb5",
+          "on-secondary-fixed": "#1f1b18",
+          "error": "#ba1a1a",
+          "surface-tint": "#ab3501",
+          "surface-container": "#e7eefe",
+          "on-tertiary-container": "#f5fff6",
+          "on-primary": "#ffffff",
+          "primary-fixed-dim": "#ffb59d",
+          "tertiary": "#006947",
+          "tertiary-container": "#00855b",
+          "error-container": "#ffdad6",
+          "on-secondary-fixed-variant": "#4b4642",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary": "#ffffff",
+          "surface-container-highest": "#dce2f3",
+          "on-tertiary-fixed-variant": "#005236",
+          "on-error": "#ffffff",
+          "on-surface-variant": "#59413a",
+          "inverse-primary": "#ffb59d",
+          "on-surface": "#151c27",
+          "on-primary-container": "#fffbff",
+          "tertiary-fixed": "#6ffbbe",
+          "surface-dim": "#d3daea",
+          "secondary-container": "#eae1db",
+          "on-primary-fixed-variant": "#832600",
+          "surface-container-high": "#e2e8f8",
+          "surface-variant": "#dce2f3"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "gutter": "1.5rem",
+          "margin": "2.5rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-xl": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.03em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_2px_12px_-2px_rgba(31,27,24,0.06)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="menu-selections" href="#"><img alt="Savor Ordering Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VbOTsMjF0QhgDn73R5i1cOL1RozTQ_y9j83-DzYRc1xC9dyr3F89VMpPil-NyuUTirHnzlUZcClK3_qrleB5arUQUeP_HzSFyVT17SEM7faOwOxGqb8Sb8uCEaGpq9AhhUIiKacdykvra_Uwf1U9LavDK0zrV9KF6DOKMgaYyPDN12Bo740P95vYg_jRgVFiGIQp6Syh1yXiQuN4ba5_EYlU5ojXgjjFA11uo67jLN74j32wF7OXqRJCA"/></a><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-secondary-container text-on-secondary-fixed text-label-md font-label-md cursor-pointer hover:bg-surface-container-high transition-colors"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span>Dine-in • Table 14</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div></div><nav class="hidden md:flex items-center gap-space-xs p-space-xs rounded-xl bg-surface-container-low" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="menu-selections" href="#">1. Menu &amp; Selections</a><a class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-bold rounded-lg shadow-sm transition-colors font-label-lg text-label-lg" data-path="review-pay" href="#">2. Review &amp; Pay</a></nav><div class="flex items-center gap-space-md"><button class="hidden lg:flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[18px] text-primary">room_service</span><span>Call Server</span></button><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary hover:bg-primary-container text-on-primary transition-colors font-label-lg text-label-lg" type="button"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="hidden sm:inline">Order</span><span class="flex items-center justify-center min-w-[20px] h-5 px-space-xs rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold">9</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto px-margin py-space-lg">
+<!-- Top Progress Bar & Breadcrumbs -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-lg">
+<a class="group flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" data-path="menu-selections" href="#">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<span>Back to Menu to edit items</span>
+</a>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-lg text-label-lg text-on-surface">Step 2 of 2: Ready to Pay</span>
+</div>
+<div class="w-32 h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="w-full h-full bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Main Checkout Grid (60% / 40%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT COLUMN: Verification, Tip, Payment, Digital Receipt (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Dining & Table Info Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Table 14 • Main Dining Hall</span>
+</div>
+<span class="font-label-md text-label-md px-space-sm py-space-xs rounded-full bg-secondary-container text-on-secondary-fixed">
+              Active Session
+            </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-sm">
+<div class="flex flex-col bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Order Reference</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">#SV-8924</span>
+</div>
+<div class="flex flex-col bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Server Assigned</span>
+<div class="flex items-center gap-space-xs mt-space-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary">person</span>
+<span class="font-label-lg text-label-lg text-on-surface">Elena M.</span>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kitchen Status</span>
+<div class="flex items-center gap-space-xs mt-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">skillet</span>
+<span class="font-label-lg text-label-lg text-on-surface">Ready to Fire</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Gratuity & Tip Selector -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">volunteer_activism</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Gratuity &amp; Tip</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Optional table service gratuity</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-space-sm mt-space-md" id="tip-selector-group">
+<button class="tip-btn flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all text-center" onclick="setTip(0.15, this)" type="button">
+<span class="font-headline-sm text-headline-sm">15%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">$9.47</span>
+</button>
+<button class="tip-btn relative flex flex-col items-center justify-center p-space-sm rounded-lg bg-primary text-on-primary transition-all text-center shadow-md" onclick="setTip(0.18, this)" type="button">
+<span class="absolute -top-2.5 px-space-xs py-0.5 bg-on-primary-fixed text-primary-fixed rounded-full font-label-sm text-[10px] tracking-wide uppercase">Recommended</span>
+<span class="font-headline-sm text-headline-sm">18%</span>
+<span class="font-label-sm text-label-sm text-primary-fixed mt-0.5">$11.36</span>
+</button>
+<button class="tip-btn flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all text-center" onclick="setTip(0.20, this)" type="button">
+<span class="font-headline-sm text-headline-sm">20%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">$12.62</span>
+</button>
+<button class="tip-btn flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all text-center" onclick="setTip('custom', this)" type="button">
+<span class="font-label-lg text-label-lg">Custom</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Enter $</span>
+</button>
+<button class="tip-btn flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all text-center" onclick="setTip(0, this)" type="button">
+<span class="font-label-lg text-label-lg">No Tip</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">$0.00</span>
+</button>
+</div>
+<div class="hidden mt-space-md pt-space-sm" id="custom-tip-container">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-space-xs">Enter Custom Tip Amount</label>
+<div class="relative max-w-xs">
+<span class="absolute left-space-md top-1/2 -translate-y-1/2 font-headline-sm text-on-surface-variant">$</span>
+<input class="w-full bg-surface-container-low rounded-lg pl-8 pr-space-md py-space-sm text-on-surface font-headline-sm focus:outline-none focus:bg-surface-container-high" id="custom-tip-input" min="0" oninput="applyCustomTip(this.value)" placeholder="0.00" step="0.5" type="number"/>
+</div>
+</div>
+</div>
+<!-- Payment Method Selector -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Payment Method</h2>
+<span class="flex items-center gap-space-xs font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+              PCI Compliant
+            </span>
+</div>
+<!-- Payment Tabs -->
+<div class="grid grid-cols-3 gap-space-xs p-space-xs rounded-xl bg-surface-container-low mb-space-lg">
+<button class="pay-tab-btn py-space-sm px-space-md rounded-lg font-label-lg text-label-lg bg-surface-container-lowest text-on-surface shadow-sm transition-all flex items-center justify-center gap-space-xs" id="tab-card" onclick="selectPaymentTab('card')" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">credit_card</span>
+<span>Credit Card</span>
+</button>
+<button class="pay-tab-btn py-space-sm px-space-md rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-space-xs" id="tab-digital" onclick="selectPaymentTab('digital')" type="button">
+<span class="material-symbols-outlined text-[18px]">contactless</span>
+<span>Apple Pay / Google Pay</span>
+</button>
+<button class="pay-tab-btn py-space-sm px-space-md rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-space-xs" id="tab-cash" onclick="selectPaymentTab('cash')" type="button">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+<span>Pay Server</span>
+</button>
+</div>
+<!-- Tab Content 1: Credit / Debit Card -->
+<div class="payment-content flex flex-col gap-space-md" id="content-card">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-space-xs">Cardholder Name</label>
+<input class="w-full bg-surface-container-low rounded-lg px-space-md py-space-sm text-on-surface font-body-md focus:outline-none focus:bg-surface-container-high transition-colors" type="text" value="Alexander Wright"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-space-xs">Card Number</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low rounded-lg pl-space-md pr-12 py-space-sm text-on-surface font-body-md focus:outline-none focus:bg-surface-container-high transition-colors" type="text" value="4829 •••• •••• 9104"/>
+<div class="absolute right-space-md top-1/2 -translate-y-1/2 flex items-center gap-1">
+<span class="w-4 h-4 rounded-full bg-primary opacity-80"></span>
+<span class="w-4 h-4 rounded-full bg-primary-container -ml-2 opacity-80"></span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-space-xs">Expires (MM/YY)</label>
+<input class="w-full bg-surface-container-low rounded-lg px-space-md py-space-sm text-on-surface font-body-md focus:outline-none focus:bg-surface-container-high transition-colors" type="text" value="08 / 27"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-space-xs">Security CVV</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low rounded-lg px-space-md py-space-sm text-on-surface font-body-md focus:outline-none focus:bg-surface-container-high transition-colors" maxlength="4" type="password" value="842"/>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-space-md top-1/2 -translate-y-1/2">help_outline</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<input checked="" class="w-4 h-4 accent-primary rounded" id="save-card" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer" for="save-card">
+                Save card securely for quicker orders on this device
+              </label>
+</div>
+</div>
+<!-- Tab Content 2: Apple Pay / Google Pay -->
+<div class="payment-content hidden flex-col gap-space-md py-space-sm" id="content-digital">
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<span class="w-12 h-12 rounded-xl bg-inverse-surface flex items-center justify-center text-inverse-on-surface">
+<span class="material-symbols-outlined text-[28px]">phone_iphone</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Fast 1-Touch Checkout</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Defaulting to Apple Pay / Google Wallet card ending in 7102</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[24px]">check_circle</span>
+</div>
+<button class="w-full h-12 rounded-lg bg-inverse-surface hover:bg-on-background text-inverse-on-surface font-headline-sm flex items-center justify-center gap-space-sm transition-colors shadow-md" type="button">
+<span class="material-symbols-outlined text-[20px]">contactless</span>
+<span>Pay with Apple Pay / Google Pay</span>
+</button>
+</div>
+<!-- Tab Content 3: Cash at Counter / Pay Server -->
+<div class="payment-content hidden flex-col gap-space-md py-space-sm" id="content-cash">
+<div class="p-space-md rounded-xl bg-secondary-container text-on-secondary-fixed flex items-start gap-space-md">
+<span class="material-symbols-outlined text-[28px] text-primary mt-0.5">receipt_long</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm">Pay In-Person at Table 14</h3>
+<p class="font-body-sm text-body-sm mt-space-xs text-on-secondary-fixed-variant">
+                  Your kitchen ticket will dispatch right now. Elena M. will present the mobile terminal or accept cash directly at your table whenever you are ready.
+                </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check</span>
+<span>No pre-authorization charged today</span>
+</div>
+</div>
+</div>
+<!-- Receipt Delivery Options -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Digital Receipt</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Choose where to send your itemized receipt &amp; dining invoice.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-space-xs">Email Address</label>
+<input class="w-full bg-surface-container-low rounded-lg px-space-md py-space-sm text-on-surface font-body-md focus:outline-none focus:bg-surface-container-high transition-colors" type="email" value="alexander.w@example.com"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-space-xs">Mobile Phone (SMS)</label>
+<input class="w-full bg-surface-container-low rounded-lg px-space-md py-space-sm text-on-surface font-body-md focus:outline-none focus:bg-surface-container-high transition-colors" type="tel" value="+1 (555) 392-8401"/>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Sticky Order Slip & Final Submission (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md sticky top-24">
+<!-- Receipt Ticket Style Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-xl relative overflow-hidden">
+<!-- Subtle decorative receipt punchouts -->
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Order Slip Summary</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">6 Items in Order</h2>
+</div>
+<a class="font-label-md text-label-md text-primary hover:text-primary-container transition-colors flex items-center gap-0.5" data-path="menu-selections" href="#">
+<span>Edit</span>
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</a>
+</div>
+<!-- Itemized Line Items -->
+<div class="flex flex-col gap-space-sm py-space-xs">
+<!-- Item 1: Pepperoni Pizza -->
+<div class="flex items-start justify-between gap-space-sm bg-surface-container-low/60 p-space-sm rounded-xl">
+<div class="flex gap-space-sm">
+<img alt="Freshly baked artisan pepperoni pizza" class="w-14 h-14 rounded-lg object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0nVG9FV-s1SUzIZhE9mYlGhAEgdtf2oqjzE7rU1OBdxc1HLaBP1qRpKI_uA7p-1KuZn91qa_TWld8HuSjYP9nscGXHw1yjDGEhNcy-v1uGYB39iAvD2Lz7l4jnSPAcVMV2ivrMJQax66ILOJgzqwHeoJehfuDc0DWpjUcJEXl8XE7ZqcDiQZWVyzjZQAeQTxSPuaRYxXBqgpRYbtHZC8RfBo73UChLfo5HmWuQEhyL3Sl5wEvF66sIg"/>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">2×</span>
+<h3 class="font-headline-sm text-[16px] text-on-surface">Pepperoni Pizza</h3>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Size: Large • 2 × $12.95</p>
+</div>
+</div>
+<span class="font-headline-sm text-[16px] text-on-surface shrink-0 font-semibold">$25.90</span>
+</div>
+<!-- Item 2: Eggplant Pizza -->
+<div class="flex items-start justify-between gap-space-sm bg-surface-container-low/60 p-space-sm rounded-xl">
+<div class="flex gap-space-sm">
+<img alt="Roasted eggplant pizza with fresh basil and mozzarella" class="w-14 h-14 rounded-lg object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYaSiutnX7_rRQrlhvAcXh-TaQwl2NUsnzGQo9U8exohu7WQKnfqTon6wG4R9fo9QlPl1ylajFT4hY1AZzt77CM4Rv4iGg_P5nNFNYL-zWb2quWncL7fmhDN3RSaeIKRA3UVEhhOb4Rfa6EFa0-WPqFkSBIuqsWFKigY_pbgbsbQoa4KJJHlkZdpUWMpDgvuoZm0N6SPrB88EeOBjqqgH0Va0CKIf2kk_tlDsmmmA-vvGxRXDqeLXLAA"/>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">1×</span>
+<h3 class="font-headline-sm text-[16px] text-on-surface">Eggplant Pizza</h3>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Size: Large • 1 × $11.95</p>
+</div>
+</div>
+<span class="font-headline-sm text-[16px] text-on-surface shrink-0 font-semibold">$11.95</span>
+</div>
+<!-- Item 3: Fries -->
+<div class="flex items-start justify-between gap-space-sm bg-surface-container-low/60 p-space-sm rounded-xl">
+<div class="flex gap-space-sm">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[28px]">lunch_dining</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">2×</span>
+<h3 class="font-headline-sm text-[16px] text-on-surface">Fries</h3>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Size: Large • 2 × $4.50</p>
+</div>
+</div>
+<span class="font-headline-sm text-[16px] text-on-surface shrink-0 font-semibold">$9.00</span>
+</div>
+<!-- Item 4: Greek Salad -->
+<div class="flex items-start justify-between gap-space-sm bg-surface-container-low/60 p-space-sm rounded-xl">
+<div class="flex gap-space-sm">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[28px]">eco</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">1×</span>
+<h3 class="font-headline-sm text-[16px] text-on-surface">Greek Salad</h3>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">1 × $7.25</p>
+</div>
+</div>
+<span class="font-headline-sm text-[16px] text-on-surface shrink-0 font-semibold">$7.25</span>
+</div>
+<!-- Item 5: Coke -->
+<div class="flex items-start justify-between gap-space-sm bg-surface-container-low/60 p-space-sm rounded-xl">
+<div class="flex gap-space-sm">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[28px]">local_cafe</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">2×</span>
+<h3 class="font-headline-sm text-[16px] text-on-surface">Coke</h3>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Size: Medium • 2 × $2.00</p>
+</div>
+</div>
+<span class="font-headline-sm text-[16px] text-on-surface shrink-0 font-semibold">$4.00</span>
+</div>
+<!-- Item 6: Bottled Water -->
+<div class="flex items-start justify-between gap-space-sm bg-surface-container-low/60 p-space-sm rounded-xl">
+<div class="flex gap-space-sm">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[28px]">water_drop</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">1×</span>
+<h3 class="font-headline-sm text-[16px] text-on-surface">Bottled Water</h3>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">1 × $5.00</p>
+</div>
+</div>
+<span class="font-headline-sm text-[16px] text-on-surface shrink-0 font-semibold">$5.00</span>
+</div>
+</div>
+<!-- Financial Breakdown Table -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs my-space-sm">
+<div class="flex justify-between items-center font-body-md text-body-md text-on-surface-variant">
+<span>Subtotal</span>
+<span class="text-on-surface font-label-lg" id="summary-subtotal">$63.10</span>
+</div>
+<div class="flex justify-between items-center font-body-md text-body-md text-on-surface-variant">
+<span>State &amp; Local Tax (8.5%)</span>
+<span class="text-on-surface font-label-lg" id="summary-tax">$5.36</span>
+</div>
+<div class="flex justify-between items-center font-body-md text-body-md text-on-surface-variant border-b border-surface-container-high/60 pb-space-xs">
+<span>Total Before Tip</span>
+<span class="text-on-surface font-label-lg font-semibold" id="summary-before-tip">$68.46</span>
+</div>
+<div class="flex justify-between items-center font-body-md text-body-md text-on-surface-variant pt-space-xs">
+<span class="flex items-center gap-1">
+<span>Gratuity / Tip</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-fixed text-[11px] font-label-sm" id="tip-rate-badge">18%</span>
+</span>
+<span class="text-on-surface font-label-lg" id="summary-tip">$11.36</span>
+</div>
+<!-- Grand Total Highlight -->
+<div class="pt-space-sm mt-space-xs flex justify-between items-baseline border-t border-surface-container-high">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Total Due</span>
+<span class="font-body-sm text-[11px] text-tertiary font-medium">Includes 8.5% tax &amp; gratuity</span>
+</div>
+<span class="font-display-xl text-display-xl text-primary font-extrabold" id="summary-total">$79.82</span>
+</div>
+</div>
+<!-- Kitchen Direct Notice -->
+<div class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container text-on-surface font-body-sm text-[12px] mb-space-md">
+<span class="material-symbols-outlined text-[18px] text-tertiary">bolt</span>
+<span>Your order will be sent straight to kitchen station upon submission.</span>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-space-sm">
+<button class="w-full h-14 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-headline-md text-[18px] flex items-center justify-center gap-space-sm shadow-xl hover:shadow-2xl transition-all cursor-pointer font-bold" id="submit-order-btn" onclick="triggerOrderSuccess()" type="button">
+<span class="material-symbols-outlined text-[22px]">lock</span>
+<span id="btn-label">Submit Order • $79.82</span>
+</button>
+<a class="w-full py-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-colors text-center" data-path="menu-selections" href="#">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">arrow_back</span>
+<span>Back to Menu to edit items</span>
+</a>
+</div>
+<!-- Security Badge footer -->
+<div class="flex items-center justify-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-space-md text-center">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified_user</span>
+<span>Encrypted &amp; Secure 256-bit • Instant Kitchen Print</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Order Placement Success Modal Dialog -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" id="success-modal">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-2xl p-space-xl shadow-2xl transform scale-95 transition-transform duration-300 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-tertiary-container/20 flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined text-[36px]">local_pizza</span>
+</div>
+<span class="font-label-md text-label-md px-space-sm py-space-xs rounded-full bg-secondary-container text-on-secondary-fixed mb-space-xs">Order Confirmed • #SV-8924</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Order Sent to Kitchen!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs mb-space-lg">
+        Elena M. has received your pizza order tickets for Table 14. Estimated preparation time is 14–18 minutes.
+      </p>
+<div class="w-full bg-surface-container-low rounded-xl p-space-md text-left mb-space-lg flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Table Assignment</span>
+<span class="text-on-surface font-bold">Table 14</span>
+</div>
+<div class="flex justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Total Paid</span>
+<span class="text-primary font-bold" id="modal-paid-total">$79.82</span>
+</div>
+<div class="flex justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Digital Receipt</span>
+<span class="text-on-surface">alexander.w@example.com</span>
+</div>
+</div>
+<a class="w-full py-space-md rounded-xl bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-center transition-colors shadow-md" data-path="menu-selections" href="#">
+        Return to Table Dashboard
+      </a>
+</div>
+</div>
+</div>
+<script>
+  // Calculations State
+  const foodSubtotal = 63.10;
+  const taxAmount = 5.36; // 8.5%
+  let currentTipAmount = 11.36; // 18% of 63.10
+
+  function updateTotals() {
+    const total = foodSubtotal + taxAmount + currentTipAmount;
+    const formattedTip = `$${currentTipAmount.toFixed(2)}`;
+    const formattedTotal = `$${total.toFixed(2)}`;
+
+    document.getElementById('summary-tip').textContent = formattedTip;
+    document.getElementById('summary-total').textContent = formattedTotal;
+    document.getElementById('btn-label').textContent = `Submit Order • ${formattedTotal}`;
+    document.getElementById('modal-paid-total').textContent = formattedTotal;
+  }
+
+  function setTip(rate, buttonEl) {
+    // Reset button styles
+    const buttons = document.querySelectorAll('.tip-btn');
+    buttons.forEach(b => {
+      b.className = 'tip-btn flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all text-center';
+      const childSub = b.querySelector('.text-primary-fixed');
+      if (childSub) childSub.className = 'font-label-sm text-label-sm text-on-surface-variant mt-0.5';
+      const recBadge = b.querySelector('span.uppercase');
+      if (recBadge) recBadge.remove();
+    });
+
+    const customContainer = document.getElementById('custom-tip-container');
+
+    if (rate === 'custom') {
+      buttonEl.className = 'tip-btn flex flex-col items-center justify-center p-space-sm rounded-lg bg-primary text-on-primary transition-all text-center shadow-md';
+      customContainer.classList.remove('hidden');
+      document.getElementById('tip-rate-badge').textContent = 'Custom';
+      currentTipAmount = parseFloat(document.getElementById('custom-tip-input').value) || 0;
+    } else {
+      customContainer.classList.add('hidden');
+      buttonEl.className = 'tip-btn flex flex-col items-center justify-center p-space-sm rounded-lg bg-primary text-on-primary transition-all text-center shadow-md';
+      const labelSub = buttonEl.querySelector('.text-on-surface-variant');
+      if (labelSub) labelSub.className = 'font-label-sm text-label-sm text-primary-fixed mt-0.5';
+      
+      if (rate === 0.18) {
+        currentTipAmount = 11.36;
+      } else if (rate === 0.15) {
+        currentTipAmount = 9.47;
+      } else if (rate === 0.20) {
+        currentTipAmount = 12.62;
+      } else {
+        currentTipAmount = 0;
+      }
+      document.getElementById('tip-rate-badge').textContent = rate === 0 ? '0%' : `${Math.round(rate * 100)}%`;
+    }
+
+    updateTotals();
+  }
+
+  function applyCustomTip(val) {
+    const parsed = parseFloat(val);
+    currentTipAmount = isNaN(parsed) || parsed < 0 ? 0 : parsed;
+    updateTotals();
+  }
+
+  function selectPaymentTab(tab) {
+    const tabs = ['card', 'digital', 'cash'];
+    tabs.forEach(t => {
+      const btn = document.getElementById(`tab-${t}`);
+      const content = document.getElementById(`content-${t}`);
+      if (t === tab) {
+        btn.className = 'pay-tab-btn py-space-sm px-space-md rounded-lg font-label-lg text-label-lg bg-surface-container-lowest text-on-surface shadow-sm transition-all flex items-center justify-center gap-space-xs';
+        content.classList.remove('hidden');
+        content.classList.add('flex');
+      } else {
+        btn.className = 'pay-tab-btn py-space-sm px-space-md rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-space-xs';
+        content.classList.remove('flex');
+        content.classList.add('hidden');
+      }
+    });
+
+    // Update submit button wording for cash
+    const totalText = document.getElementById('summary-total').textContent;
+    if (tab === 'cash') {
+      document.getElementById('btn-label').textContent = `Fire Order to Kitchen • Pay Server Later (${totalText})`;
+    } else {
+      document.getElementById('btn-label').textContent = `Submit Order • ${totalText}`;
+    }
+  }
+
+  function triggerOrderSuccess() {
+    const modal = document.getElementById('success-modal');
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100');
+    modal.querySelector('.transform').classList.remove('scale-95');
+    modal.querySelector('.transform').classList.add('scale-100');
+  }
+</script></main><footer class="w-full bg-surface-container-low py-space-lg"><div class="max-w-[1440px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-tertiary">verified_user</span><span>256-bit Encrypted Checkout • Contactless Table Service</span></div><div class="flex items-center gap-space-lg"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="table-assistance" href="#">Need Assistance?</a><span class="text-outline-variant">•</span><span>Table 14</span><span class="text-outline-variant">•</span><span>Savor Dining OS © 2025</span></div></div></footer></body></html>

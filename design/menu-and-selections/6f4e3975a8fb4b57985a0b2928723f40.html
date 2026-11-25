@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary-fixed": "#390c00",
+          "on-error-container": "#93000a",
+          "on-background": "#151c27",
+          "on-secondary-container": "#69635f",
+          "tertiary-fixed-dim": "#4edea3",
+          "surface-container-low": "#f0f3ff",
+          "inverse-surface": "#2a313d",
+          "background": "#f9f9ff",
+          "surface": "#f9f9ff",
+          "on-tertiary": "#ffffff",
+          "on-tertiary-fixed": "#002113",
+          "secondary-fixed-dim": "#cdc5c0",
+          "outline": "#8d7168",
+          "primary": "#a73300",
+          "primary-fixed": "#ffdbd0",
+          "inverse-on-surface": "#ebf1ff",
+          "surface-bright": "#f9f9ff",
+          "secondary": "#635d59",
+          "secondary-fixed": "#eae1db",
+          "primary-container": "#ca4b1a",
+          "outline-variant": "#e0bfb5",
+          "on-secondary-fixed": "#1f1b18",
+          "error": "#ba1a1a",
+          "surface-tint": "#ab3501",
+          "surface-container": "#e7eefe",
+          "on-tertiary-container": "#f5fff6",
+          "on-primary": "#ffffff",
+          "primary-fixed-dim": "#ffb59d",
+          "tertiary": "#006947",
+          "tertiary-container": "#00855b",
+          "error-container": "#ffdad6",
+          "on-secondary-fixed-variant": "#4b4642",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary": "#ffffff",
+          "surface-container-highest": "#dce2f3",
+          "on-tertiary-fixed-variant": "#005236",
+          "on-error": "#ffffff",
+          "on-surface-variant": "#59413a",
+          "inverse-primary": "#ffb59d",
+          "on-surface": "#151c27",
+          "on-primary-container": "#fffbff",
+          "tertiary-fixed": "#6ffbbe",
+          "surface-dim": "#d3daea",
+          "secondary-container": "#eae1db",
+          "on-primary-fixed-variant": "#832600",
+          "surface-container-high": "#e2e8f8",
+          "surface-variant": "#dce2f3"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "gutter": "1.5rem",
+          "margin": "2.5rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-xl": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.03em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_2px_12px_-2px_rgba(31,27,24,0.06)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="menu-selections" href="#"><img alt="Savor Ordering Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VbOTsMjF0QhgDn73R5i1cOL1RozTQ_y9j83-DzYRc1xC9dyr3F89VMpPil-NyuUTirHnzlUZcClK3_qrleB5arUQUeP_HzSFyVT17SEM7faOwOxGqb8Sb8uCEaGpq9AhhUIiKacdykvra_Uwf1U9LavDK0zrV9KF6DOKMgaYyPDN12Bo740P95vYg_jRgVFiGIQp6Syh1yXiQuN4ba5_EYlU5ojXgjjFA11uo67jLN74j32wF7OXqRJCA"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Savor</span></a><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-secondary-container text-on-secondary-fixed text-label-md font-label-md cursor-pointer hover:bg-surface-container-high transition-colors"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span>Dine-in • Table 14</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div></div><nav class="hidden md:flex items-center gap-space-xs p-space-xs rounded-xl bg-surface-container-low" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="menu-selections" href="#">1. Menu &amp; Selections</a><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="review-pay" href="#">2. Review &amp; Pay</a></nav><div class="flex items-center gap-space-md"><button class="hidden lg:flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[18px] text-primary">room_service</span><span>Call Server</span></button><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary hover:bg-primary-container text-on-primary transition-colors font-label-lg text-label-lg" type="button"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="hidden sm:inline">Order</span><span class="flex items-center justify-center min-w-[20px] h-5 px-space-xs rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm">3</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Dynamic Notification Bar / Table Ping -->
+<div class="w-full bg-surface-container-high py-space-xs px-margin">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="text-on-surface font-semibold">Kitchen Queue: Fast (~12-15 mins)</span>
+<span class="text-outline-variant">•</span>
+<span>Table 14 active order session #842</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-md">
+<span class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+          Seasonal Spring Menu is Live
+        </span>
+</div>
+</div>
+</div>
+<!-- Main Studio Layout: 2 Columns (68% Menu discovery / 32% Real-time Order Summary) -->
+<div class="max-w-[1440px] w-full mx-auto px-margin py-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT SECTION: Culinary Catalog & Customization Discovery (approx. 8 cols of 12 = ~67-68%) -->
+<section class="lg:col-span-8 flex flex-col gap-space-lg min-w-0">
+<!-- Search, Table Micro-Stats & Dietary Quick Filters -->
+<div class="flex flex-col gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<!-- Top Row: Instant Search & Active Badge -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="relative w-full sm:w-80">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low rounded-lg text-body-md font-body-md text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search ingredients, wine, or mains..." type="text"/>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-auto">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Sort by</span>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-1">
+<span>Chef Curated</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Category Navigation Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 scrollbar-none">
+<button class="px-space-md py-2 rounded-full bg-on-secondary-fixed text-surface-container-lowest font-label-md text-label-md whitespace-nowrap shadow-sm">
+              All Items (28)
+            </button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors">
+              Artisanal Burgers &amp; Mains
+            </button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors">
+              Fresh Bowls &amp; Greens
+            </button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors">
+              Wood-Fired Sides
+            </button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors">
+              Handcrafted Drinks
+            </button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors">
+              House Desserts
+            </button>
+</div>
+<!-- Dietary Filter Badges -->
+<div class="flex items-center gap-space-xs flex-wrap pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">Dietary:</span>
+<button class="px-space-sm py-1 rounded-md bg-tertiary/10 text-tertiary font-label-sm text-label-sm flex items-center gap-1 hover:bg-tertiary/20 transition-colors">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+<span>Vegetarian</span>
+</button>
+<button class="px-space-sm py-1 rounded-md bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[14px]">spa</span>
+<span>Gluten-Free</span>
+</button>
+<button class="px-space-sm py-1 rounded-md bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm flex items-center gap-1 hover:bg-primary-fixed-dim transition-colors">
+<span class="material-symbols-outlined text-[14px]">stars</span>
+<span>Chef Special</span>
+</button>
+<button class="px-space-sm py-1 rounded-md bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[14px]">psychiatry</span>
+<span>Nut-Free</span>
+</button>
+</div>
+</div>
+<!-- Section Header Banner with Subtle Accent -->
+<div class="flex items-baseline justify-between pt-space-xs">
+<div>
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-primary font-bold">Featured Craft Selections</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-0.5">Signature Dishes &amp; Complements</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline">Showing 6 curated items</span>
+</div>
+<!-- Food Cards Grid (2-Column Asymmetric Layout) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- ITEM 1: Truffle Angus Burger (SELECTED: QTY 2) -->
+<div class="relative bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5">
+<!-- Visual Badge Ribbon -->
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Artisanal gourmet brioche beef burger with melted aged cheddar, shaved black truffles, crispy fried shallots, and fresh wild arugula on a dark stone plate, professional food studio lighting, warm amber tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1qFHjjZcJtmXIKPTU0z_Gbhf-sCxLdIb3IgSsV9qIXcS_yCgJ7e9-ghIjaSUsAfjn9ccxTTZwZ1Qbokd2VRsOOmrYBqz7BW23pGTJsjCHBKETdz8F0Y-xnI8wnF0s2c7wdsK-GBe5GPrlg_SPGfCoJZbgVr_TKZZgcrdJ7nieankHVzz97JzvSggFi3d-Tq2th-ZhjiIuTSLjuYE9qJFm4KTyrV9_cSqXjOC9uzBaqVkilzHqsVneWg"/>
+<div class="absolute top-3 left-3 flex items-center gap-1 px-space-sm py-1 rounded-full bg-on-surface/85 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary-fixed text-[14px]">stars</span>
+<span>Chef's Pick</span>
+</div>
+<div class="absolute top-3 right-3 px-space-sm py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm">
+                2 in Tray
+              </div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Truffle Angus Burger</h3>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold whitespace-nowrap">$18.50</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Prime 200g Black Angus beef patty, toasted Hokkaido brioche, black truffle aioli, melted Gruyère, and caramelized shallot jam.
+                </p>
+<div class="mt-space-sm flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Medium-rare</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Extra Aioli</span>
+</div>
+</div>
+<!-- Action Bar / Stepper Area -->
+<div class="pt-space-sm flex items-center justify-between bg-surface-container-low -mx-space-md -mb-space-md p-space-md mt-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Subtotal: <strong class="text-on-surface">$37.00</strong></span>
+<!-- Active Stepper Control -->
+<div class="flex items-center bg-surface-container-lowest rounded-lg shadow-sm p-1 gap-space-sm">
+<button class="w-8 h-8 rounded flex items-center justify-center text-primary hover:bg-primary-fixed/50 transition-colors">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-6 text-center font-headline-sm text-headline-sm text-on-surface font-bold">2</span>
+<button class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 2: Artisan Fries with Truffle Aioli (SELECTED: QTY 3) -->
+<div class="relative bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Hand-cut golden russet fries sprinkled with freshly shaved pecorino cheese, fine parsley flakes, and a ceramic ramekin filled with velvety white truffle dipping mayo, natural sunlight from modern bistro window." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwhNlCFL0r5qYFRCXXbgpxili9cRKEM4FYbBju4jIaIDFL1LdWAM3PPYG7GJQjzWi_y2PT-pd13LGahewCX6zdggI6-yC4IrsBR6FX1JtqGbPUqvOdbkvt1BYtUm9gjD9mhUPC16fFx2X_Kcxuzh_yYQzchJGIhQDlUz4y2cs94qqfP64EnMdh5Z8-rJjMsBrCQffQ8MQcKGNxWzUR5sYlb59K0RNIEj969PzDRVPLSztJjuU34-oaOg"/>
+<div class="absolute top-3 left-3 flex items-center gap-1 px-space-sm py-1 rounded-full bg-on-surface/85 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-[14px]">local_fire_department</span>
+<span>Popular</span>
+</div>
+<div class="absolute top-3 right-3 px-space-sm py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm">
+                3 in Tray
+              </div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Artisan Truffle Fries</h3>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold whitespace-nowrap">$7.50</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Triple-cooked Russet potato batons, shaved 24-month Parmigiano-Reggiano, Maldon sea salt, rosemary, and cold-pressed truffle oil.
+                </p>
+<div class="mt-space-sm flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm text-label-sm">Vegetarian</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Dip Included</span>
+</div>
+</div>
+<!-- Active Stepper Control -->
+<div class="pt-space-sm flex items-center justify-between bg-surface-container-low -mx-space-md -mb-space-md p-space-md mt-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Subtotal: <strong class="text-on-surface">$22.50</strong></span>
+<div class="flex items-center bg-surface-container-lowest rounded-lg shadow-sm p-1 gap-space-sm">
+<button class="w-8 h-8 rounded flex items-center justify-center text-primary hover:bg-primary-fixed/50 transition-colors">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-6 text-center font-headline-sm text-headline-sm text-on-surface font-bold">3</span>
+<button class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 3: House Craft Ginger Brew (SELECTED: QTY 1) -->
+<div class="relative bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-md">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Tall crystal faceted tumbler filled with sparkling golden fermented ginger brew, lime wheel garnish, fresh mint sprigs, and clear artisanal ice cubes on a polished walnut bar counter, warm hospitality atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkuH-vx_9V3KgvhXOiLkRQk7qM3EUqyPf4zeSZ8fL5WHs4u_aLbNwCukHnVbDafiwvpPYo1CiPhvqqJzPoQyU1sB_arQgH8xGTgnc8sDw2PG9-7-rZZLx45NBjZewD-eGUTX14ZWwDPG_hg7b4X4nz10xl5SJzBdbSs-7fKdf9Jy5dSE1FTBfgGLTiRtnvsvYdZ3Ar2L0oTQ2dkuBRlIHtP5rFR8-Pa6uUETEIG9YuzyoAGKjnMf_RuQ"/>
+<div class="absolute top-3 left-3 px-space-sm py-1 rounded-full bg-on-surface/85 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm">
+<span>Handcrafted</span>
+</div>
+<div class="absolute top-3 right-3 px-space-sm py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm">
+                1 in Tray
+              </div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">House Craft Ginger Brew</h3>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold whitespace-nowrap">$5.50</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Slow-fermented organic Fijian ginger, infused with Meyer lemon, fresh kaffir lime zest, and raw raw wildflower honey.
+                </p>
+<div class="mt-space-sm flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm text-label-sm">Alcohol-Free</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">On Tap</span>
+</div>
+</div>
+<!-- Active Stepper Control -->
+<div class="pt-space-sm flex items-center justify-between bg-surface-container-low -mx-space-md -mb-space-md p-space-md mt-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Subtotal: <strong class="text-on-surface">$5.50</strong></span>
+<div class="flex items-center bg-surface-container-lowest rounded-lg shadow-sm p-1 gap-space-sm">
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:text-error hover:bg-error-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+<span class="w-6 text-center font-headline-sm text-headline-sm text-on-surface font-bold">1</span>
+<button class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 4: Smoked Salmon Quinoa Bowl (UNSELECTED: 'Add to Order') -->
+<div class="relative bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-md">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Healthy colorful grain bowl featuring cold-smoked wild salmon curls, roasted sweet potato wedges, edamame, tri-color quinoa, pickled red onion, sliced avocado and toasted sesame dressing in an artisanal ceramic bowl." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Q48XPTWMgyH7xkQtL6Jp7yHXZA4MXKM1t7nlJqXq5EmqR1oIqUO6aZyekeunRKb6ycpcVRiQZtm1y2mC-GRKO8Q4FQK8RjfbP5qoMXFQaQTPhQZlAwDfLheICbLFN87oc8Y--PKs2batwRAbeJxyYvE4zrrb7lrKTgdrKgm1PkkhpDqoQeUji1j2PC6_YpOlzIwb3km_zANiy1F7cWb5u0l1ZZyeppQlKJFD2fM31FEo_H-gkUUG7w"/>
+<div class="absolute top-3 left-3 px-space-sm py-1 rounded-full bg-on-surface/85 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm">
+<span>Gluten-Free</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Smoked Salmon Bowl</h3>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold whitespace-nowrap">$16.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Norwegian smoked salmon, organic tri-color quinoa, creamy Hass avocado, charred edamame, and citrus ponzu emulsion.
+                </p>
+<div class="mt-space-sm flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">High-Protein</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Dairy-Free</span>
+</div>
+</div>
+<!-- Quick Add Action Button -->
+<div class="pt-space-sm flex items-center justify-between bg-surface-container-low -mx-space-md -mb-space-md p-space-md mt-2">
+<span class="font-label-md text-label-md text-on-surface-variant">420 kcal</span>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-highest hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md flex items-center gap-1 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Add to Order</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ITEM 5: Crispy Polenta Bites (UNSELECTED) -->
+<div class="relative bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-md">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Golden crisp deep-fried polenta cubes arranged geometrically with smoked paprika aioli dollops, micro cilantro, and shaved pecorino on a textured slate platter, soft bistro background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0vGnem1fMiOFX8AC7yLlwJFuSXri2d8IFmlYhZiIDSk7l56BLLqVZAgq6-DWawuEQu23Vyas0wPj6l06ohepxyfIPayLzD75Q5s0BV--V6pLuF4U9HcbphkleZdhqKq4dIB9djRh6XnkonkKpv64ZdZs1wNzwAro-8w2rAXidLoZJGs6OmJhJTzaSbaMahVcOKq4eWeIg7BX_7lCsnWtMe3FKKVaaRcVxOCIuz2ufu9q2RtAXUrcJyQ"/>
+<div class="absolute top-3 left-3 px-space-sm py-1 rounded-full bg-on-surface/85 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm">
+<span>Vegetarian</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Crispy Polenta Bites</h3>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold whitespace-nowrap">$8.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Stone-ground heirloom corn polenta cubes, fried crisp with fresh sage, smoked sea salt, and a sun-dried tomato romesco dip.
+                </p>
+<div class="mt-space-sm flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm text-label-sm">Vegetarian</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Gluten-Free</span>
+</div>
+</div>
+<!-- Quick Add Action Button -->
+<div class="pt-space-sm flex items-center justify-between bg-surface-container-low -mx-space-md -mb-space-md p-space-md mt-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Sharing Plate</span>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-highest hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md flex items-center gap-1 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Add to Order</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ITEM 6: Tiramisu Parfait (UNSELECTED) -->
+<div class="relative bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-md">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Elegant layered glass jar dessert featuring dark espresso-soaked ladyfingers, velvety mascarpone cream, dark Valrhona cocoa powder dusting, and dark chocolate shavings, delicate dessert cafe lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5gcZpd8V6Z_4A5fGnahyL-IguYRhyt5n7q-11vMEMuq6YhvbdWLGY-RDRCpQ_XWF4sHHufHxh9sq0g18ooeG3FHZVkYK4KEiQWADIEvkRoIx_vRADtJcL2m4mxZO9y_Y19G30LB0g7iUP43OrPmp_sNw1ETibSeOE2y0G4vGLbDsFr6yfb2BE05IkNZbknUoOoH2D_0TlWP9CN4ug2LevhlpsC_tnXHcbOLFcsdG16fqfdsb1QeECqA"/>
+<div class="absolute top-3 left-3 px-space-sm py-1 rounded-full bg-on-surface/85 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm">
+<span>House Special</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tiramisu Parfait</h3>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold whitespace-nowrap">$9.50</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  House-baked savoiardi dipped in single-origin cold brew, whipped organic mascarpone, and Valrhona 70% dark chocolate curls.
+                </p>
+<div class="mt-space-sm flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">House Made</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Vegetarian</span>
+</div>
+</div>
+<!-- Quick Add Action Button -->
+<div class="pt-space-sm flex items-center justify-between bg-surface-container-low -mx-space-md -mb-space-md p-space-md mt-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Sweet Finish</span>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-highest hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md flex items-center gap-1 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Add to Order</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Chef's Pairing & Kitchen Reassurance Micro-banner -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">restaurant</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Chef's Pairing Recommendation</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pair the Truffle Angus Burger with our cold-brewed Ginger Brew for balanced umami richness.</p>
+</div>
+</div>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors">
+            Learn More
+          </button>
+</div>
+</section>
+<!-- RIGHT SECTION: Sticky "Your Current Selection" Order Rail (approx. 4 cols of 12 = ~32%) -->
+<aside class="lg:col-span-4 sticky top-24 flex flex-col gap-space-md">
+<!-- Main Cart Slip Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-lg p-space-lg flex flex-col gap-space-md">
+<!-- Header & Live Counter Badge -->
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Active Table Tray</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Your Current Selection</h2>
+</div>
+<div class="px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span>3 Items (6 Total)</span>
+</div>
+</div>
+<!-- Dining Mode Switcher -->
+<div class="bg-surface-container-low p-1 rounded-lg grid grid-cols-2 gap-1 text-center font-label-md text-label-md">
+<button class="py-1.5 rounded-md bg-surface-container-lowest text-on-surface font-bold shadow-sm flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">table_restaurant</span>
+<span>Dine-in • Table 14</span>
+</button>
+<button class="py-1.5 rounded-md text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">takeout_dining</span>
+<span>To-Go / Takeaway</span>
+</button>
+</div>
+<!-- Itemized Tray List showing MULTIPLE selections with individual counts and line totals -->
+<div class="flex flex-col gap-space-sm divide-y-0">
+<!-- LINE ITEM 1: Truffle Angus Burger (Qty 2) -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="min-w-0 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">2×</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold truncate">Truffle Angus Burger</span>
+</div>
+<span class="text-on-surface-variant font-body-sm text-body-sm pl-6.5 block">
+                    $18.50 each • Medium-rare, extra aioli
+                  </span>
+</div>
+<!-- Line Item Computed Total -->
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold whitespace-nowrap">$37.00</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<button class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">edit_note</span>
+<span>Customize</span>
+</button>
+<!-- Stepper control inside the tray -->
+<div class="flex items-center bg-surface-container-lowest rounded-md shadow-xs px-1 py-0.5 gap-2">
+<button class="w-6 h-6 flex items-center justify-center text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-[15px]">remove</span>
+</button>
+<span class="font-label-md text-label-md font-bold text-on-surface">2</span>
+<button class="w-6 h-6 flex items-center justify-center text-primary hover:text-primary-container">
+<span class="material-symbols-outlined text-[15px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- LINE ITEM 2: Artisan Truffle Fries (Qty 3) -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="min-w-0 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">3×</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold truncate">Artisan Truffle Fries</span>
+</div>
+<span class="text-on-surface-variant font-body-sm text-body-sm pl-6.5 block">
+                    $7.50 each • Rosemary &amp; parmesan dip
+                  </span>
+</div>
+<!-- Line Item Computed Total -->
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold whitespace-nowrap">$22.50</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<button class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">edit_note</span>
+<span>No fresh parsley</span>
+</button>
+<!-- Stepper control inside the tray -->
+<div class="flex items-center bg-surface-container-lowest rounded-md shadow-xs px-1 py-0.5 gap-2">
+<button class="w-6 h-6 flex items-center justify-center text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-[15px]">remove</span>
+</button>
+<span class="font-label-md text-label-md font-bold text-on-surface">3</span>
+<button class="w-6 h-6 flex items-center justify-center text-primary hover:text-primary-container">
+<span class="material-symbols-outlined text-[15px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- LINE ITEM 3: House Craft Ginger Brew (Qty 1) -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="min-w-0 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">1×</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold truncate">House Craft Ginger Brew</span>
+</div>
+<span class="text-on-surface-variant font-body-sm text-body-sm pl-6.5 block">
+                    $5.50 each • Chilled with lime wheel
+                  </span>
+</div>
+<!-- Line Item Computed Total -->
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold whitespace-nowrap">$5.50</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<button class="text-on-surface-variant hover:text-error font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">delete</span>
+<span>Remove</span>
+</button>
+<!-- Stepper control inside the tray -->
+<div class="flex items-center bg-surface-container-lowest rounded-md shadow-xs px-1 py-0.5 gap-2">
+<button class="w-6 h-6 flex items-center justify-center text-on-surface-variant hover:text-error">
+<span class="material-symbols-outlined text-[15px]">remove</span>
+</button>
+<span class="font-label-md text-label-md font-bold text-on-surface">1</span>
+<button class="w-6 h-6 flex items-center justify-center text-primary hover:text-primary-container">
+<span class="material-symbols-outlined text-[15px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Special Chef Instructions Accordion/Input -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">notes</span>
+<span>Kitchen &amp; Server Notes</span>
+</label>
+<textarea class="w-full p-space-sm bg-surface-container-low rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary/20 resize-none" placeholder="Allergies, extra napkins, or serve drinks first..." rows="2"></textarea>
+</div>
+<!-- Tally Calculation Box -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between font-body-md text-body-md text-on-surface-variant">
+<span>Items Subtotal (6 total)</span>
+<span class="text-on-surface font-semibold">$65.00</span>
+</div>
+<div class="flex items-center justify-between font-body-md text-body-md text-on-surface-variant">
+<span>State &amp; Local Dining Tax (9%)</span>
+<span class="text-on-surface font-semibold">$5.85</span>
+</div>
+<div class="flex items-center justify-between font-body-md text-body-md text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span>Service Fee</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary">verified</span>
+</span>
+<span class="text-tertiary font-bold">Complimentary</span>
+</div>
+<div class="h-px bg-surface-container-highest my-1"></div>
+<div class="flex items-baseline justify-between pt-1">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-bold block">Estimated Total</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tip calculated at payment</span>
+</div>
+<span class="font-display-xl text-display-xl text-on-surface font-extrabold tracking-tight">$70.85</span>
+</div>
+</div>
+<!-- Direct CTA to Page 2 (Review & Pay) -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<a class="w-full h-12 bg-primary hover:bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md hover:shadow-xl transition-all active:scale-[0.99]" data-path="review-pay" href="#">
+<span>Ready to Pay ($70.85)</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant pt-1 flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">lock</span>
+<span>Ready to review bill, add server tip &amp; split payment</span>
+</p>
+</div>
+</div>
+<!-- Quick Assistance Utility Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">contactless</span>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Ordering together?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Other guests at Table 14 can scan the stand QR to add items.</p>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-space-lg"><div class="max-w-[1440px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-tertiary">verified_user</span><span>256-bit Encrypted Checkout • Contactless Table Service</span></div><div class="flex items-center gap-space-lg"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="table-assistance" href="#">Need Assistance?</a><span class="text-outline-variant">•</span><span>Table 14</span><span class="text-outline-variant">•</span><span>Savor Dining OS © 2025</span></div></div></footer></body></html>
