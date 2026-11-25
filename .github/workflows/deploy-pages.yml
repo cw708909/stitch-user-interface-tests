@@ -1,5 +1,6 @@
 name: Deploy to GitHub Pages
 
+# Publishes the built site through GitHub's official Pages deployment step.
 on:
   push:
     branches: [main]
