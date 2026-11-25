@@ -40,3 +40,17 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: app/dist
           publish_branch: gh-pages
+
+      - name: Publish site files to the main branch root
+        run: |
+          rm -rf assets images favicon.svg icons.svg index.html
+          cp -r app/dist/. .
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "The published site is already up to date."
+          else
+            git commit -m "Update published site [skip deploy]"
+            git push origin main
+          fi
